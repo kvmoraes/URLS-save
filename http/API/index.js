@@ -20,9 +20,7 @@ http.createServer((req, res) => {
   
     const { name, url, del } = URL.parse(req.url, true).query
 
-    res.writeHead(200, {
-        'Acess-Control-Allow-Origin': '*'
-    })
+    res.setHeader("Access-Control-Allow-Origin", "*"); 
 
     if (!name || !url) 
     

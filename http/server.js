@@ -22,6 +22,4 @@ http.createServer((req, res) => {
         }
     )
 
-    console.log(extname)
-
 }).listen(5000, () => console.log("Server is running"))
